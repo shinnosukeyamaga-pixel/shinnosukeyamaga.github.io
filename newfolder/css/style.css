@@ -1,0 +1,502 @@
+/* default */
+
+
+body {
+	width:100%;
+	max-width: 100%;
+	overflow-x: hidden;
+ /*   background-image :url(../bg.png);
+    background-attachment:fixed; */
+    background-color: #ffffff;
+	margin:0;
+	padding:0;
+	color:#333;
+  font-family: 'Zen Kaku Gothic New', sans-serif;  
+	font-size: 100%; 
+    -webkit-text-size-adjust: 100%;
+}
+header {
+	width: 100%;
+    height:clamp(0px, 10%, 85px);
+	margin: 0px auto;
+	padding: 0px;
+	color: #333;
+    background-color: #fff;
+    border: 0px solid #E0DADD;
+}
+header a,header a:hover{
+	color: #333;
+	text-decoration: none;
+}
+header img {
+	font-size: 0.75em;
+	margin: 10px 15px; 
+	height:60px;
+	float:left;
+}
+
+header p{
+	font-size: 1.5em;
+	font-weight: bold;
+	padding:.5em .5em .5em .5em;
+	text-align:right;
+}
+
+/*top image*/
+#topimg {	
+	width: 100%;
+    height: auto;
+	margin: 0px auto;
+	padding: 0px;
+	background: #9ee4ff;
+	border: 0px solid #E0DADD;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  /* 縦長の場合 */
+  #topimg {	
+	width: auto;
+    height: 160vw;
+	margin: 0px auto;
+	padding: 0px;
+	background: hsl(197, 100%, 78%);
+	border: 0px solid #E0DADD;
+    }
+}
+
+.slider{          
+    height:auto;
+	
+    margin: 0px auto;
+}
+
+.slider img{         /* 画像のスライドショー*/                     
+    height: auto;
+	width: 100%;
+    margin: 0px auto;
+	  display: block;
+	
+}
+
+@media (max-aspect-ratio: 1/1) {
+  /* 縦長の場合 */
+  .slider img{
+    height: 160vw;
+	width: auto;
+    margin: 0px auto;
+	position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+    display: block;
+}
+}
+
+
+main {    /* メインはここだよおおおおおおおおお*/
+    display: flex;
+	width: 100%;
+	margin: 0px auto;
+	
+	background-image: url("../img/background.png");
+
+	border-top: 1px solid #e7fdff;
+}
+
+
+
+header, article, footer, aside, time ,nav { display: block; }
+p {                                                       /*通常の文字（P）*/
+	margin: .5em .5em 1.5em .5em;
+	 font-size: clamp(5px, 2.6vw, 22px);
+     line-height: 1.8;    
+     font-weight: 550;
+}
+h1 {
+	padding:.4em;
+	border-bottom: 3px dotted #ccc;
+  
+}
+h2 {
+    margin-top: 1em;
+	line-height: 1em;
+	font-size: 2em;
+	padding: .25em 0 .5em .75em;
+	border-left: 6px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+h3 {
+	line-height: 1.2em;
+	font-size: 1.2em;
+	margin:0.5em 0;
+}
+nav{
+	width:100%;
+	padding:0px 0px;
+    margin: 0px auto;
+	border:solid 1px #ffffff;
+    background: -moz-linear-gradient(top,#ffffff 0%,#EEE);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#EEE));
+   
+    
+    
+}
+footer {
+	width: 100%;
+	margin: 0px auto;
+	color: #666;
+	text-align: center;
+	padding: 10px 0px;
+	background: #e1ffff;
+	font: bold 0.8em;
+}
+
+#center{
+    text-align: center;
+}
+
+/* color */
+.red{
+	color: #F00;
+}
+.green{
+	color: #6C9;
+}
+
+.blue_twitter{
+	color: #00aced ;
+}
+
+.blue_facebook{
+	color: #305097;
+}
+.green_LINE{
+	color: #5ae628;
+}
+
+/* link */
+a {
+	color: #1111CC;
+	text-decoration: none;
+}
+a:hover {
+	color: #b38571;
+	text-decoration: underline;
+}
+
+
+/*global navi上の方にあるコンテンツだよー*/
+nav ul {
+	width:100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    -webkit-justify-content: space-between; /* Safari */
+    justify-content:         space-between;
+}
+/*global navi上の方にあるコンテンツをスマホブラウザで消すやつだよ*/
+@media (max-aspect-ratio: 1/1) {
+  /* 縦長の場合 */
+  nav ul {
+	width:100%;
+	height : 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    -webkit-justify-content: space-between; /* Safari */
+    justify-content:         space-between;
+	font-size: 0;
+	
+  }
+
+}
+
+nav ul li {
+    width:17%;
+    text-align: center;
+	list-style: none;
+}
+nav ul li+ li {
+    border-left: 1px solid #333;
+}
+nav ul li a {
+    display: block;  
+    padding: 10px 10px;
+	color: #333;
+    text-align: center;
+	text-decoration: none;
+}
+
+nav ul li a span{
+    display: block;
+    letter-spacing: 1px;
+    font-size:75%;
+    color:#888;
+}
+
+nav ul li a:hover {
+    color: #333;
+    background: -moz-linear-gradient(top,#eee 0%,#ddd);
+    background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd));
+    text-decoration: none;
+}
+
+/*content 下の方にあるやつだよー*/
+#content{
+    flex: 1;
+    border-right: 1px dotted #ffffff;
+    padding: 0px 20px;
+}
+
+/*content List*/
+.contentsList
+{
+	display: flex;
+	-webkit-justify-content: flex-start; /* Safari */
+	justify-content:         flex-start;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 0px;
+}
+.contentsList li
+{
+	display: flex;
+	position:relative;
+	align-items:center;
+	border: 1px solid #e6e6e6;
+	max-width: 30%;
+  width : 30%;
+	margin: 10px;
+	background-color: #ffffff9a;
+	border-radius: 6px;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  /* 縦長の場合 */
+ .contentsList li
+{
+	display: flex;
+	position:relative;
+	align-items:left;
+	border: 1px solid #ddd;
+    max-width: 45%;
+	width: 100%;
+	margin: 4px;
+	
+	border-radius: 6px;
+}	
+  }
+
+.contentsList li:hover {
+    color: #ffffff;
+	background-color: #8b8b8b91;
+    text-decoration: none;
+}
+.contentsList a
+{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contentsList li .img {
+	width: 30%;
+	height : auto;
+	
+    text-align: center;
+}
+.contentsList li .txt {
+	text-align: left;
+	width: 70%;
+	padding:10px;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  /* 縦長の場合 */
+ .contentsList li .txt 
+{
+	font-size:0.7em;
+	padding-left : 5px;
+	padding-right: 2px;
+}
+}
+
+.contentsList li .txt p {
+	margin-top: 10px;
+	margin-bottom: 0.5em;
+	font-size:0.9em;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  /* 縦長の場合 */
+ .contentsList li .txt p
+{
+	font-size:0em;
+}
+	
+  }
+
+
+.contents-title{
+	
+      font-size: clamp(5px, 3vw, 40px);
+     line-height: 1.8;    
+     font-weight: 800;
+	 text-decoration-line: underline;
+  text-decoration-color: #5fffea;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8x;
+}
+
+
+
+#thumb img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+#mokuji a{
+	color: #333;
+}
+#mokuji a:hover{
+	color: #666;
+	text-decoration: none;
+}
+
+.news-title{  /*下に青線引いてある格好いい文字のクラス*/
+	
+  font-size: clamp(10px, 5vw, 40px);
+  line-height: 1.8;    
+  font-weight: 800;
+	text-decoration-line: underline;
+  text-decoration-color: #53ffe8;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 10px;
+	 
+}
+
+.report-title{  /*レポートのタイトルに使用されてるクラス*/
+	
+  font-size: clamp(10px, 5vw, 40px);
+  color : rgb(87, 83, 83);
+  line-height: 1.8;    
+  font-weight: 1000;
+	text-decoration-line: underline;
+  text-decoration-color: #00a2ff;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 10px;
+	 
+}
+
+/*スライダー表示関係*/
+.slider-wrap {
+  position: relative;   /* 基準 */
+}
+
+.slider-text {
+  position: absolute;
+  z-index: 10;
+  font-size: 81px !important;
+  bottom: 80vw;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: #00ff37;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.slider-wrapimg {
+  position: absolute;
+  bottom: 110vw;
+  left: 5%;
+   width: 90%;
+  display: block;
+}
+     /*スライダー＊の上のAboutUsとかのボタン*/
+.slider-link1 img {
+   position: absolute;
+   bottom: 63vw;
+  left: 24%;
+   width: 55%;
+  display: block;
+}
+.slider-link2 img {
+   position: absolute;
+   bottom: 48vw;
+  left: 19%;
+   width: 55%;
+  display: block;
+}
+
+.slider-link3 img {
+   position: absolute;
+   bottom: 33vw;
+  left: 24%;
+   width: 55%;
+  display: block; 
+  
+   
+}
+
+.slider-link4 img {
+   position: absolute;
+   bottom: 18vw; 
+   left: 19%;
+   width: 55%; 
+  display: block;
+}
+
+.slider-link5 img {
+   position: absolute;
+   bottom: 3vw; 
+   left: 24%;
+   width: 55%; 
+  display: block;
+}
+
+
+@media (min-aspect-ratio: 1/1) {
+  /* 横長の場合 */
+    .slider-wrapimg {
+  position: absolute;
+  bottom: 0vw;
+  left: 5%;
+   width: 60%;
+  display: block;
+}
+
+.slider-link1 img { display: none }
+.slider-link2 img { display: none }
+.slider-link3 img { display: none }
+.slider-link4 img {display: none }
+.slider-link5 img {display: none}
+  }
+
+  /*ギャラリーの写真に影つけるやつ*/
+.img-shadow {
+  
+ width: clamp(0px, 48%, 10000px);
+padding : 0.5%;
+
+  box-shadow: 0 8px 20px rgba(45, 87, 136, 0.719);
+  border-radius: 8px; /* 角丸の写真なら合わせると自然 */
+}
+.img-shadow-single {
+  
+ width: clamp(0px, 65%, 8000px);
+padding-left : 5%;
+padding-right : 5%;
+padding-top : 1%;
+padding-bottom:   1%;
+
+  box-shadow: 0 8px 20px rgba(45, 87, 136, 0.719);
+  border-radius: 8px; /* 角丸の写真なら合わせると自然 */
+}

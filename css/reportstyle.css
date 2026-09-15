@@ -1,0 +1,244 @@
+/* default */
+
+
+body {
+	width:100%;
+	max-width: 100%;
+	overflow-x: hidden;
+ /*   background-image :url(../bg.png);
+    background-attachment:fixed; */
+    background-color: #ffffff;
+	margin:0;
+	padding:0;
+	color:#333;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+
+
+
+
+main {    /* メインはここだよおおおおおおおおお*/
+    display: flex;
+	width: 100%;
+	margin: 0px auto;
+	
+	background-image: url("../img/background2.png");
+    background-size: 150% auto;
+
+
+	border-top: 1px solid #e7fdff;
+}
+
+
+
+header, article, footer, aside, time ,nav { display: block; }
+p {                                                       /*通常の文字（P）*/
+	margin: .5em .5em 1.5em .5em;
+	 font-size: clamp(5px, 2.6vw, 22px);
+     line-height: 1.8;    
+     font-weight: 500;
+}
+h1 {
+	padding:.4em;
+	border-bottom: 3px dotted #ccc;
+  font-size: clamp(7px, 5vw, 50px);
+  text-decoration-line: underline;
+  text-decoration-color: #a2d8da;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 10px;
+  
+}
+h2 {
+    margin-top: 1em;
+	line-height: 1em;
+	font-size: clamp(5px, 4vw, 40px);
+	padding: .25em 0 .5em .75em;
+	border-left: 6px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+h3 {
+	line-height: 1.2em;
+	font-size: 1.2em;
+	margin:0.5em 0;
+}
+nav{
+	width:100%;
+	padding:0px 0px;
+    margin: 0px auto;
+	border:solid 1px #ffffff;
+    background: -moz-linear-gradient(top,#ffffff 0%,#EEE);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#EEE));
+}
+footer {
+	width: 100%;
+	margin: 0px auto;
+	color: #666;
+	text-align: center;
+	padding: 10px 0px;
+	background: #e7e7e7;
+	font: bold 0.8em;
+}
+
+#center{
+    text-align: center;
+}
+
+#left{                            /* 本文の文章を左寄せにするやつ */
+    text-align: left;
+    padding-left : 20%;   
+    padding-right : 20%; 
+}
+
+@media (max-aspect-ratio: 1/1) {
+  /* 縦長の場合 */
+  #left{                            /* 本文の文章を左寄せにするやつ */
+    text-align: left;
+    padding-left : 4%; 
+    padding-right : 4%;   
+}
+}
+
+/* color */
+.red{
+	color: #F00;
+}
+.green{
+	color: #6C9;
+}
+
+.blue_twitter{
+	color: #00aced ;
+}
+
+.blue_facebook{
+	color: #305097;
+}
+.green_LINE{
+	color: #5ae628;
+}
+
+/* link */
+a {
+	color: #1111CC;
+	text-decoration: none;
+}
+a:hover {
+	color: #b38571;
+	text-decoration: underline;
+}
+
+
+/*global navi上の方にあるコンテンツだよー*/
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+nav ul {
+	width:100%;
+   position: sticky;
+    top: 0;
+    z-index: 9999;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    -webkit-justify-content: space-between; /* Safari */
+    justify-content:         space-between;
+}
+
+
+nav ul li {
+    width:50%;
+     
+    text-align: center;
+	list-style: none;
+}
+nav ul li+ li {
+    border-left: 1px solid #333;
+     
+}
+nav ul li a {
+    display: block;  
+    padding: 10px 10px;
+	color: #333;
+    text-align: center;
+	text-decoration: none;
+  
+}
+
+nav ul li a span{
+    display: block;
+    letter-spacing: 1px;
+    font-size:75%;
+    color:#888;
+     
+}
+
+nav ul li a:hover {
+    color: #333;
+    background: -moz-linear-gradient(top,#eee 0%,#ddd);
+    background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd));
+    text-decoration: none;
+    
+}
+
+#content{
+    flex: 1;
+    border-right: 1px dotted #ffffff;
+    padding: 0px 20px;
+}
+
+
+
+.report-title{  /*レポートのタイトルに使用されてるクラス*/
+	
+  font-size: clamp(10px, 5vw, 40px);
+  color : rgb(87, 83, 83);
+  line-height: 1.8;    
+  font-weight: 1000;
+	text-decoration-line: underline;
+  text-decoration-color: #00a2ff;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 10px;
+	 
+}
+
+
+
+  /*ギャラリーの写真に影つけるやつ*/
+.img-shadow {
+  
+ width: clamp(0px, 48%, 10000px);
+padding : 0.5%;
+
+  box-shadow: 0 8px 20px rgba(45, 87, 136, 0.719);
+  border-radius: 8px; /* 角丸の写真なら合わせると自然 */
+}
+.img-shadow-single {
+  
+ width: clamp(0px, 85%, 1500px);
+padding-left : 3%;
+padding-right : 3%;
+padding-top : 2%;
+padding-bottom:   2%;
+
+  box-shadow: 0 8px 20px rgba(45, 87, 136, 0.719);
+  border-radius: 8px; /* 角丸の写真なら合わせると自然 */
+}
+
+.img-shadow-single-big {
+  
+ width: clamp(0px, 98%, 1500px);
+padding-left : 1.5%;
+padding-right : 1.5%;
+padding-top : 3%;
+padding-bottom:   3%;
+
+  box-shadow: 0 8px 20px rgba(45, 87, 136, 0.719);
+  border-radius: 8px; /* 角丸の写真なら合わせると自然 */
+}
