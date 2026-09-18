@@ -20,7 +20,7 @@ body {
 
 
 
-main {    /* ƒƒCƒ“‚Í‚±‚±‚¾‚æ‚¨‚¨‚¨‚¨‚¨‚¨‚¨‚¨‚¨*/
+main {    /* ãƒ¡ã‚¤ãƒ³ã¯ã“ã“ã ã‚ˆãŠãŠãŠãŠãŠãŠãŠãŠãŠ*/
     display: flex;
 	width: 100%;
 	margin: 0px auto;
@@ -35,7 +35,7 @@ main {    /* ƒƒCƒ“‚Í‚±‚±‚¾‚æ‚¨‚¨‚¨‚¨‚¨‚¨‚¨‚¨‚¨*/
 
 
 header, article, footer, aside, time ,nav { display: block; }
-p {                                                       /*’Êí‚Ì•¶šiPj*/
+p {                                                       /*é€šå¸¸ã®æ–‡å­—ï¼ˆPï¼‰*/
 	margin: .5em .5em 1.5em .5em;
 	 font-size: clamp(5px, 2.6vw, 22px);
      line-height: 1.8;    
@@ -86,15 +86,15 @@ footer {
     text-align: center;
 }
 
-#left{                            /* –{•¶‚Ì•¶Í‚ğ¶Šñ‚¹‚É‚·‚é‚â‚Â */
+#left{                            /* æœ¬æ–‡ã®æ–‡ç« ã‚’å·¦å¯„ã›ã«ã™ã‚‹ã‚„ã¤ */
     text-align: left;
     padding-left : 20%;   
     padding-right : 20%; 
 }
 
 @media (max-aspect-ratio: 1/1) {
-  /* c’·‚Ìê‡ */
-  #left{                            /* –{•¶‚Ì•¶Í‚ğ¶Šñ‚¹‚É‚·‚é‚â‚Â */
+  /* ç¸¦é•·ã®å ´åˆ */
+  #left{                            /* æœ¬æ–‡ã®æ–‡ç« ã‚’å·¦å¯„ã›ã«ã™ã‚‹ã‚„ã¤ */
     text-align: left;
     padding-left : 4%; 
     padding-right : 4%;   
@@ -131,7 +131,7 @@ a:hover {
 }
 
 
-/*global naviã‚Ì•û‚É‚ ‚éƒRƒ“ƒeƒ“ƒc‚¾‚æ[*/
+/*global naviä¸Šã®æ–¹ã«ã‚ã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã ã‚ˆãƒ¼*/
 
 nav {
     position: sticky;
@@ -195,7 +195,7 @@ nav ul li a:hover {
 
 
 
-.report-title{  /*ƒŒƒ|[ƒg‚Ìƒ^ƒCƒgƒ‹‚Ég—p‚³‚ê‚Ä‚éƒNƒ‰ƒX*/
+.report-title{  /*ãƒ¬ãƒãƒ¼ãƒˆã®ã‚¿ã‚¤ãƒˆãƒ«ã«ä½¿ç”¨ã•ã‚Œã¦ã‚‹ã‚¯ãƒ©ã‚¹*/
 	
   font-size: clamp(10px, 5vw, 40px);
   color : rgb(87, 83, 83);
@@ -210,14 +210,14 @@ nav ul li a:hover {
 
 
 
-  /*ƒMƒƒƒ‰ƒŠ[‚ÌÊ^‚É‰e‚Â‚¯‚é‚â‚Â*/
+  /*ã‚®ãƒ£ãƒ©ãƒªãƒ¼ã®å†™çœŸã«å½±ã¤ã‘ã‚‹ã‚„ã¤*/
 .img-shadow {
   
  width: clamp(0px, 48%, 10000px);
 padding : 0.5%;
 
   box-shadow: 0 8px 20px rgba(45, 87, 136, 0.719);
-  border-radius: 8px; /* ŠpŠÛ‚ÌÊ^‚È‚ç‡‚í‚¹‚é‚Æ©‘R */
+  border-radius: 8px; /* è§’ä¸¸ã®å†™çœŸãªã‚‰åˆã‚ã›ã‚‹ã¨è‡ªç„¶ */
 }
 .img-shadow-single {
   
@@ -228,7 +228,7 @@ padding-top : 2%;
 padding-bottom:   2%;
 
   box-shadow: 0 8px 20px rgba(45, 87, 136, 0.719);
-  border-radius: 8px; /* ŠpŠÛ‚ÌÊ^‚È‚ç‡‚í‚¹‚é‚Æ©‘R */
+  border-radius: 8px; /* è§’ä¸¸ã®å†™çœŸãªã‚‰åˆã‚ã›ã‚‹ã¨è‡ªç„¶ */
 }
 
 .img-shadow-single-big {
@@ -240,5 +240,5 @@ padding-top : 3%;
 padding-bottom:   3%;
 
   box-shadow: 0 8px 20px rgba(45, 87, 136, 0.719);
-  border-radius: 8px; /* ŠpŠÛ‚ÌÊ^‚È‚ç‡‚í‚¹‚é‚Æ©‘R */
+  border-radius: 8px; /* è§’ä¸¸ã®å†™çœŸãªã‚‰åˆã‚ã›ã‚‹ã¨è‡ªç„¶ */
 }
